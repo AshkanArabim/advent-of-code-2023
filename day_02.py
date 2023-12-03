@@ -32,7 +32,7 @@ def part_1(content):
     
     t1 = time.time()
     print("sum of possible games:", sum_possible)
-    print("time taken:", t1 - t0)
+    print("time taken:", "{:.5f}".format(t1 - t0))
     
     
 def part_2(content):
@@ -54,7 +54,7 @@ def part_2(content):
     
     t1 = time.time()
     print("sum of powers:", sum_powers)
-    print("time taken:", t1 - t0)
+    print("time taken:", "{:.5f}".format(t1 - t0))
     
 
 if __name__ == "__main__":
