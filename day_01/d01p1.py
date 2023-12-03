@@ -1,3 +1,5 @@
+# running time: 0.00429081916809082
+
 import re
 import time
 
