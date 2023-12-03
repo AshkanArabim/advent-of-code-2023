@@ -86,9 +86,6 @@ def part_2(content):
     star_coords = [divmod(match.start(), LINE_WIDTH) for match 
                      in re.finditer("\*", content)]
     
-    # DONE: a way to quickly reset the seen grid around the cell??
-    # TODO: but I only want to reset when all surrounding content is done
-    
     sum_gear_ratios = 0
     for star_coord in star_coords:
         nums = [] # will store nums adjacent to star
