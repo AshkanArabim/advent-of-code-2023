@@ -1,4 +1,4 @@
-# running time: 0.005483150482177734
+# running time: 0.00548
 
 import re
 import time
@@ -67,4 +67,4 @@ with open('./input.txt', 'r') as f:
 t1 = time.time()
   
 print("part 2 answer:", running_sum)
-print("time taken:", t1 - t0)
+print("time taken:", "{:.5f}".format(t1 - t0))
