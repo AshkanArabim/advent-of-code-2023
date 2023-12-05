@@ -2,7 +2,6 @@ import re
 import time
 
 # match anything except dots, newlines, and digits
-SYMBOL_PATTERN = re.compile(r'[^\d\.\n]')
 
 def get_full_number(coords, grid, seen_nums_grid, return_seen_coords=False):
     seen_coords = []
@@ -50,6 +49,7 @@ def part_1(content):
     seen_nums_grid = [[False] * len(grid[0]) for i in range(len(grid))]
     
     # find symbols and convert index to coords
+    SYMBOL_PATTERN = re.compile(r'[^\d\.\n]')
     symbol_coords = [divmod(match.start(), LINE_WIDTH) for match 
                    in re.finditer(SYMBOL_PATTERN, content)]
     
