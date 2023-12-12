@@ -4,7 +4,7 @@ import numpy as np
 
 def parse(content):
     # convert to grid
-    return [[ltr for ltr in row] for row in content.split("\n")[:-1]]
+    return [row for row in content.split("\n")[:-1]]
 
 
 def sum_distances(content, expansion_rate):    
